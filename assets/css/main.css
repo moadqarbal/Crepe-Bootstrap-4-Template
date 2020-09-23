@@ -1,0 +1,29 @@
+:root {
+    --main-color: #f9f9f9;
+}
+
+body,
+html {
+    overflow-x: hidden
+}
+
+body {
+
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/*------------ custom css -------------------*/
+.main-color{
+    color: var(--main-color);
+}
+
+.main-bg{
+    background: var(--main-color);
+}
+
+.no-radius {
+    border-radius: 0;
+}
+/*------------ custom css -------------------*/
+
