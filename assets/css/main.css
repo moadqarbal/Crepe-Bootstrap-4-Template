@@ -1,5 +1,99 @@
+/*
+* Theme Name: Crepe - Multipurpose HTML theme
+* Author: MD-Themes
+* Version: 1.0.0
+* Last Change: 20 october 2020
+* Author URI    : http://www.mo3ad.com/
+*/
+
+
+/*------------- List Of Table -----------
+# Root
+# Fonts
+# Global css:
+# Header and navs
+------------- List Of Table ----------*/
+
+
+/*------------ root -------------------*/
+
 :root {
-    --main-color: #f9f9f9;
+    --main-color: #2F004F;
+    --second-color: #5F0A87;
+}
+
+
+/*------------ root -------------------*/
+
+
+/*------------ fonts -------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Charm:400,700');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
+@font-face {
+    font-family: 'spartan_mbblack';
+    src: url('../fonts/spartanmb-black.woff2') format('woff2'), url('../fonts/spartanmb-black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'spartan_mbbold';
+    src: url('../fonts/spartanmb-bold.woff2') format('woff2'), url('../fonts/spartanmb-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'spartan_mblight';
+    src: url('../fonts/spartanmb-light.woff2') format('woff2'), url('../fonts/spartanmb-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'spartan_mbregular';
+    src: url('../fonts/spartanmb-regular.woff2') format('woff2'), url('../fonts/spartanmb-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'spartan_mbextrabold';
+    src: url('../fonts/spartanmb-extra-bold.woff2') format('woff2'), url('../fonts/spartanmb-extra-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'spartan_mbsemibold';
+    src: url('../fonts/spartanmb-semibold.woff2') format('woff2'), url('../fonts/spartanmb-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'spartan_mbthin';
+    src: url('../fonts/spartanmb-thin.woff2') format('woff2'), url('../fonts/spartanmb-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*------------ fonts -------------------*/
+
+
+/*------------ global css -------------------*/
+
+.main-color {
+    color: var(--main-color);
+}
+
+.main-bg {
+    background: var(--main-color);
 }
 
 body,
@@ -8,22 +102,42 @@ html {
 }
 
 body {
-
-    font-weight: 500;
-    font-size: 17px;
-}
-
-/*------------ custom css -------------------*/
-.main-color{
+    background: #ffffff;
     color: var(--main-color);
-}
-
-.main-bg{
-    background: var(--main-color);
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    font-weight: 400;
 }
 
 .no-radius {
     border-radius: 0;
 }
-/*------------ custom css -------------------*/
 
+.p-0 {
+    padding: 0 !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+    color: var(--second-color);
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
+/*------------ global css -------------------*/
